@@ -5,6 +5,7 @@ public class KeyMovement : MonoBehaviour
 {
     [SerializeField] private float keyMovementSpeed = 2f;
     [SerializeField] private Transform Player;
+    
     private bool touchKey = false;
 
     // Update is called once per frame
@@ -14,6 +15,7 @@ public class KeyMovement : MonoBehaviour
         {
             touchKey = true;
         }
+        
     }
     void Update()
     {

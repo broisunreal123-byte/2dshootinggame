@@ -15,7 +15,6 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
         isGrounded = Physics2D.OverlapCircle(FeetPos.position, GroundDistance, GroundLayer);
-        Debug.Log("isGrounded: " + isGrounded);
 
         float moveX =Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(moveX * speedForce, rb.linearVelocity.y);

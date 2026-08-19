@@ -356,6 +356,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32d5e8bf57f26e54097802412475bdd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterMovement
+--- !u!114 &1035393617 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3267686192415096232, guid: 624642a163d421b49ab823bd9da3b3c4, type: 3}
+  m_PrefabInstance: {fileID: 8256829731888168103}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ea68a641fd11745b19263d4de0a0aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1043342106 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 505780076281061952, guid: 2158037c87deec6439209ce7e125478f, type: 3}
@@ -440,6 +451,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1562672607 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8029050903440722583, guid: 624642a163d421b49ab823bd9da3b3c4, type: 3}
+  m_PrefabInstance: {fileID: 8256829731888168103}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70c4bc2876b54e45ad24b8d43c513f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1001 &2338651980450216906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -667,6 +689,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3267686192415096232, guid: 624642a163d421b49ab823bd9da3b3c4, type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 1562672607}
     - target: {fileID: 4442103710183037485, guid: 624642a163d421b49ab823bd9da3b3c4, type: 3}
       propertyPath: m_Name
       value: Map1
@@ -711,6 +737,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6106711223479085027, guid: 624642a163d421b49ab823bd9da3b3c4, type: 3}
+      propertyPath: m_TagString
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029050903440722583, guid: 624642a163d421b49ab823bd9da3b3c4, type: 3}
+      propertyPath: Door
+      value: 
+      objectReference: {fileID: 1035393617}
     - target: {fileID: 8029050903440722583, guid: 624642a163d421b49ab823bd9da3b3c4, type: 3}
       propertyPath: Player
       value: 
