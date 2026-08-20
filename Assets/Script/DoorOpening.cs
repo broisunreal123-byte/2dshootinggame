@@ -22,7 +22,6 @@ public class DoorOpening : MonoBehaviour
         if (other.CompareTag("Player") && isUnlocked)
         {
             SceneManager.LoadScene(nextScene);
-            Debug.Log("Loading");
         }
             
         
