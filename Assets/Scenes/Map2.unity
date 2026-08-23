@@ -639,7 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcebdf06867e6a14cb85ce009f47e59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  EndMenuUI: {fileID: 311801637}
+  EndMenuUI: {fileID: 1141755424}
 --- !u!4 &694415085
 Transform:
   m_ObjectHideFlags: 0
@@ -927,7 +927,7 @@ GameObject:
   - component: {fileID: 1141755426}
   - component: {fileID: 1141755425}
   m_Layer: 5
-  m_Name: UI
+  m_Name: EndMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1679,6 +1679,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 8533654648448113911, guid: d01eb965f0253ea42900f5a64a4fc16e, type: 3}
+      propertyPath: isFinal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533654648448113911, guid: d01eb965f0253ea42900f5a64a4fc16e, type: 3}
+      propertyPath: endingUI
+      value: 
+      objectReference: {fileID: 1141755424}
     - target: {fileID: 9195837874791264490, guid: d01eb965f0253ea42900f5a64a4fc16e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1

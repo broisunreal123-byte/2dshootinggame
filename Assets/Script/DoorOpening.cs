@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class DoorOpening : MonoBehaviour
 {
     [SerializeField] private String nextScene = "Map2";
+    [SerializeField] private bool isFinal = false;
+    [SerializeField] private GameObject endingUI;
     private bool isUnlocked = false;
     public void Unlock()
     {
@@ -21,7 +23,15 @@ public class DoorOpening : MonoBehaviour
         }
         if (other.CompareTag("Player") && isUnlocked)
         {
-            SceneManager.LoadScene(nextScene);
+            if (isFinal == true)
+            {
+                endingUI.SetActive(true);
+                Time.timeScale = 0;
+            } else
+            {
+                SceneManager.LoadScene(nextScene);
+            }
+            
         }
             
         

@@ -9,8 +9,5 @@ public class GameManagerMap2 : MonoBehaviour
         EndMenuUI.SetActive(false);
     }
 
-    public void GameOver()
-    {
-        EndMenuUI.SetActive(true);
-    }
+    
 }
