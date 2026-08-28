@@ -7,7 +7,7 @@ public class DoorOpening : MonoBehaviour
 {
     [SerializeField] private String nextScene = "Map2";
     [SerializeField] private bool isFinal = false;
-    [SerializeField] private GameObject endingUI;
+    [SerializeField] private GameObject WinningMenuUI;
     private bool isUnlocked = false;
     public void Unlock()
     {
@@ -25,7 +25,7 @@ public class DoorOpening : MonoBehaviour
         {
             if (isFinal == true)
             {
-                endingUI.SetActive(true);
+                WinningMenuUI.SetActive(true);
                 Time.timeScale = 0;
             } else
             {

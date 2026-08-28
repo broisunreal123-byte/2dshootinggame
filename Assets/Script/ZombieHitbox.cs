@@ -7,6 +7,7 @@ public class ZombieKHitbox : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Destroy(other.gameObject);
+            GameManagerMap2.Instance.showLoseMenu();
         }
     }
 }
