@@ -26,6 +26,7 @@ public class DoorOpening : MonoBehaviour
             if (isFinal == true)
             {
                 WinningMenuUI.SetActive(true);
+                CoinManager.Instance.AddCoins();
                 Time.timeScale = 0;
             } else
             {
