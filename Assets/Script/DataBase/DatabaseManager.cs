@@ -18,11 +18,14 @@ public class DatabaseManager : MonoBehaviour
         File.Copy(sourcePath, dbPath, true);
 
         _connection = new SQLiteConnection(dbPath);
-
-        List<Player> players = _connection.Table<Player>().ToList();
-        foreach (var p in players)
+    }
+    public void saveScore(int score)
+    {
+        Player savescore = new Player
         {
-            Debug.Log(p.Id + " - " + p.Score);
-        }
+            Score = score
+        };
+        _connection.Insert(savescore);
+        Debug.Log("Successfully save " + score + " gold");
     }
 }

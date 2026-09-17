@@ -4,6 +4,7 @@ public class CoinManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI coinAmountText;
     [SerializeField] private int amount;
+    [SerializeField] private  DatabaseManager db;
     private int currentCoins = 0;
     public static CoinManager Instance;
 
@@ -24,6 +25,7 @@ public class CoinManager : MonoBehaviour
     {
         currentCoins += amount;
         UpdateCoinUI();
+        db.saveScore(currentCoins);
     }
 
     private void UpdateCoinUI()
