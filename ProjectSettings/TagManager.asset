@@ -8,6 +8,7 @@ TagManager:
   - zombie
   - Door
   - turningpoint
+  - Ground
   layers:
   - Default
   - TransparentFX
