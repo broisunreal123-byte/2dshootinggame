@@ -2,11 +2,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] protected int hp = 1;
+    [SerializeField] protected int dmg = 2;
 
     // Update is called once per frame
     void Update()
