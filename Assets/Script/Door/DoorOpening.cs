@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DoorOpening : MonoBehaviour
 {
-    [SerializeField] private String nextScene = "Map2";
+    [SerializeField] private String nextScene;
     [SerializeField] private bool isFinal = false;
     [SerializeField] private GameObject WinningMenuUI;
     private bool isUnlocked = false;
