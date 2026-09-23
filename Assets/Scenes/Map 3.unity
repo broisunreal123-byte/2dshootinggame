@@ -742,15 +742,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 60190144149295610, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -58.2
+      value: -85.5
       objectReference: {fileID: 0}
     - target: {fileID: 60190144149295610, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 62.1
+      value: 74.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3526357458421305270, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3526357458421305270, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4439083690241566791, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: m_Name
       value: CoinUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694512963395754318, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5791413297156548585, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: db
@@ -1004,6 +1016,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3065946250219090193, guid: 819b84231c1d4f643a833b5feb0d99fb, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4317471687713216991, guid: 819b84231c1d4f643a833b5feb0d99fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
