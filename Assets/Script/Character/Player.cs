@@ -3,7 +3,7 @@ using UnityEngine;
 
 
 
-public class CharacterMovement : MonoBehaviour
+public class Player : Character
 {
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float jumpPower = 2f;
@@ -11,7 +11,12 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private LayerMask GroundLayer;
     [SerializeField] private Transform FeetPos;
     [SerializeField] private float GroundDistance = 0.2f;
+
     private bool isGrounded;
+    void Start()
+    {
+        hp = 100;
+    }
     void Update()
     {
         isGrounded = Physics2D.OverlapCircle(FeetPos.position, GroundDistance, GroundLayer);

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject startMenuUI;
-    [SerializeField] private CharacterMovement player;
+    [SerializeField] private Player player;
     void Update()
     {
         if (startMenuUI.activeSelf)

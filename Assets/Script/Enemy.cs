@@ -1,13 +1,17 @@
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : Character
 {
-    [SerializeField] protected int hp = 1;
-    [SerializeField] protected int dmg = 2;
+    
 
     // Update is called once per frame
-    void Update()
+    void Start()
     {
         
     }
+    void Update()
+    {
+
+    }
+    
 }

@@ -21,7 +21,7 @@ public class DatabaseManager : MonoBehaviour
     }
     public void saveScore(int score)
     {
-        Player savescore = new Player
+        player savescore = new player
         {
             Score = score
         };

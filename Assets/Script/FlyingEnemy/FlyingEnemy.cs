@@ -2,7 +2,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class FlyingEnemy : MonoBehaviour
+public class FlyingEnemy : Enemy
 {
     private int direction = 1;
     [SerializeField] private float speed =  2f;
@@ -11,6 +11,7 @@ public class FlyingEnemy : MonoBehaviour
     [SerializeField] private float spawnTime = 1f;
     void Start()
     {
+        dmg = 20;
         InvokeRepeating(nameof(spawnFireball), spawnTime, spawnTime - 0.5f);
     }
     void Update()
