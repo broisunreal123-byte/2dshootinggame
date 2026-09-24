@@ -4,6 +4,7 @@ using UnityEngine;
 public class FireBall : MonoBehaviour
 {
     [SerializeField] private float speed = 3f;
+    [SerializeField] private float dmg = 50;
     private Rigidbody2D rb;
     void Awake()
     {
@@ -17,9 +18,8 @@ public class FireBall : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Destroy(other.gameObject);
+            other.GetComponent<Character>().TakeDamage(dmg);
             Destroy(gameObject);
-            if (other == null) return;
         }
         if (other.CompareTag("Ground"))
         {
@@ -28,6 +28,6 @@ public class FireBall : MonoBehaviour
     }
 
 
-   
-    
+
+
 }

@@ -1222,9 +1222,37 @@ PrefabInstance:
       value: zombie
       objectReference: {fileID: 0}
     - target: {fileID: 6272185235189466308, guid: 50e569f867d3dd04a916ac0e83d1838b, type: 3}
+      propertyPath: hp
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272185235189466308, guid: 50e569f867d3dd04a916ac0e83d1838b, type: 3}
+      propertyPath: dmg
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272185235189466308, guid: 50e569f867d3dd04a916ac0e83d1838b, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1013116075}
+    - target: {fileID: 6272185235189466308, guid: 50e569f867d3dd04a916ac0e83d1838b, type: 3}
+      propertyPath: spawnCooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8515953300461306506, guid: 50e569f867d3dd04a916ac0e83d1838b, type: 3}
+      propertyPath: m_Size.x
+      value: 3.9392745
+      objectReference: {fileID: 0}
+    - target: {fileID: 8515953300461306506, guid: 50e569f867d3dd04a916ac0e83d1838b, type: 3}
+      propertyPath: m_Size.y
+      value: 2.4732199
+      objectReference: {fileID: 0}
+    - target: {fileID: 8515953300461306506, guid: 50e569f867d3dd04a916ac0e83d1838b, type: 3}
+      propertyPath: m_Offset.x
+      value: -1.3674487
+      objectReference: {fileID: 0}
+    - target: {fileID: 8515953300461306506, guid: 50e569f867d3dd04a916ac0e83d1838b, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.22509909
+      objectReference: {fileID: 0}
     - target: {fileID: 9202514039298504930, guid: 50e569f867d3dd04a916ac0e83d1838b, type: 3}
       propertyPath: m_Layer
       value: 10

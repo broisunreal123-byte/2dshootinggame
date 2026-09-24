@@ -11,7 +11,7 @@ public class FlyingEnemy : Enemy
     
     void Start()
     {
-        spawnCooldown = 1f;
+        
         dmg = 20;
         InvokeRepeating(nameof(spawnFireball), spawnCooldown, spawnCooldown - 0.5f);
     }

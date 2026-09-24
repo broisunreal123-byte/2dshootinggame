@@ -341,7 +341,6 @@ GameObject:
   - component: {fileID: 491200301}
   - component: {fileID: 491200300}
   - component: {fileID: 491200299}
-  - component: {fileID: 491200298}
   m_Layer: 10
   m_Name: appearance (1)
   m_TagString: zombie
@@ -366,18 +365,6 @@ Transform:
   - {fileID: 1773507211}
   m_Father: {fileID: 1722342326}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &491200298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491200296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce04be1330339e742b33d5be1809007d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!114 &491200299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,10 +377,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 144b0e58fac197c4195eeac570a98cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  hp: 0
+  dmg: 0
+  spawnCooldown: 2
   speed: 2
   fireball: {fileID: 6303296433195143223, guid: 28ef40f7bd432b440854c3994c42691f, type: 3}
   fireballspawnpoint: {fileID: 1773507211}
-  spawnTime: 2
 --- !u!50 &491200300
 Rigidbody2D:
   serializedVersion: 5
@@ -754,7 +743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3526357458421305270, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
-      value: 7
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 4439083690241566791, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: m_Name
@@ -830,7 +819,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1276618073
 Transform:
   m_ObjectHideFlags: 0
@@ -1652,7 +1641,6 @@ GameObject:
   - component: {fileID: 1954066829}
   - component: {fileID: 1954066831}
   - component: {fileID: 1954066832}
-  - component: {fileID: 1954066833}
   m_Layer: 10
   m_Name: appearance
   m_TagString: zombie
@@ -1762,22 +1750,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 144b0e58fac197c4195eeac570a98cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  hp: 0
+  dmg: 0
+  spawnCooldown: 2
   speed: 2
   fireball: {fileID: 6303296433195143223, guid: 28ef40f7bd432b440854c3994c42691f, type: 3}
   fireballspawnpoint: {fileID: 938049164}
-  spawnTime: 2
---- !u!114 &1954066833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954066828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce04be1330339e742b33d5be1809007d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &2039591795
 GameObject:
   m_ObjectHideFlags: 0

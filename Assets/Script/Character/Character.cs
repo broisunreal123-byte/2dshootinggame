@@ -5,13 +5,15 @@ public class Character : MonoBehaviour
 {
     [SerializeField] protected float hp;
     [SerializeField] protected float dmg;
+    [SerializeField] protected float spawnCooldown;
+    protected float lastAttack = -999f;
     public virtual void TakeDamage(float dmg)
     {
         hp -= dmg;
-        Debug.Log("It deals " + dmg + "dmg");
+        Debug.Log("It deals " + dmg + " dmg");
         if (hp <= 0)
         {
-           Die(); 
+            Die();
         }
     }
     protected void Die()

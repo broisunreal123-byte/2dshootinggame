@@ -17,12 +17,16 @@ public class Zombie : Enemy
         float direction = Math.Sign(player.position.x - transform.position.x);
         rb.linearVelocity = new Vector2(direction * zombieSpeed, rb.linearVelocity.y);
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             Character playercharacter = other.GetComponent<Character>();
-            playercharacter.TakeDamage(dmg);
+            if (Time.time >= lastAttack + spawnCooldown)
+            {
+                playercharacter.TakeDamage(dmg);
+                lastAttack = Time.time;
+            }
             
         }
     }
