@@ -8,11 +8,12 @@ public class FlyingEnemy : Enemy
     [SerializeField] private float speed =  2f;
     [SerializeField] private GameObject fireball;
     [SerializeField] private Transform fireballspawnpoint;
-    [SerializeField] private float spawnTime = 1f;
+    
     void Start()
     {
+        spawnCooldown = 1f;
         dmg = 20;
-        InvokeRepeating(nameof(spawnFireball), spawnTime, spawnTime - 0.5f);
+        InvokeRepeating(nameof(spawnFireball), spawnCooldown, spawnCooldown - 0.5f);
     }
     void Update()
     {

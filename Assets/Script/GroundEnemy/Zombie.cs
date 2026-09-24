@@ -23,7 +23,7 @@ public class Zombie : Enemy
         {
             Character playercharacter = other.GetComponent<Character>();
             playercharacter.TakeDamage(dmg);
-            GameManagerMap2.Instance.showLoseMenu();
+            
         }
     }
 }

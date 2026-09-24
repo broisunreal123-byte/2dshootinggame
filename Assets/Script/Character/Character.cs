@@ -8,6 +8,7 @@ public class Character : MonoBehaviour
     public virtual void TakeDamage(float dmg)
     {
         hp -= dmg;
+        Debug.Log("It deals " + dmg + "dmg");
         if (hp <= 0)
         {
            Die(); 
@@ -16,5 +17,6 @@ public class Character : MonoBehaviour
     protected void Die()
     {
         gameObject.SetActive(false);
+        GameManagerMap2.Instance.showLoseMenu();
     }
 }
