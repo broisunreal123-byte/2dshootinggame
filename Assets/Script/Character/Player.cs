@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 
@@ -13,6 +12,8 @@ public class Player : Character
     [SerializeField] private float GroundDistance = 0.2f;
 
     private bool isGrounded;
+
+
     void Start()
     {
         hp = 100;
@@ -21,7 +22,7 @@ public class Player : Character
     {
         isGrounded = Physics2D.OverlapCircle(FeetPos.position, GroundDistance, GroundLayer);
 
-        float moveX =Input.GetAxisRaw("Horizontal");
+        float moveX = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(moveX * speedForce, rb.linearVelocity.y);
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
@@ -29,6 +30,7 @@ public class Player : Character
         }
     }
 
-    
-   
+
+
+
 }
