@@ -1,5 +1,4 @@
-using System;
-using Unity.VisualScripting;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +6,7 @@ public class GameManagerMap2 : MonoBehaviour
 {
     [SerializeField] private GameObject WinMenuUI;
     [SerializeField] private GameObject LoseMenuUI;
-    [SerializeField] private String StartScene = "SampleScene";
+    [SerializeField] private string StartScene = "SampleScene";
     public static GameManagerMap2 Instance;
     private void Awake()
     {

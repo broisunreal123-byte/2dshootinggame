@@ -143,6 +143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32d5e8bf57f26e54097802412475bdd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterMovement
+  hp: 0
+  dmg: 0
+  spawnCooldown: 0
   rb: {fileID: 2967711683637380837}
   jumpPower: 11
   speedForce: 4

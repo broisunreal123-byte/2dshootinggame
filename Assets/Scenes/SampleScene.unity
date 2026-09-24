@@ -359,17 +359,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &734543598 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2009688135229088629, guid: 771597530944b314fbe9439e2813e21a, type: 3}
-  m_PrefabInstance: {fileID: 1621076491730550992}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8999332b3da9efd439d8d4f612302180, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DatabaseManager
 --- !u!114 &996030480 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5232346231643532404, guid: 4e966b49e9a0f9540a0ab4d8d155949b, type: 3}
@@ -495,14 +484,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 60190144149295610, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -150.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 60190144149295610, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 141.5
-      objectReference: {fileID: 0}
     - target: {fileID: 4439083690241566791, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: m_Name
       value: CoinUI
@@ -510,10 +491,10 @@ PrefabInstance:
     - target: {fileID: 5791413297156548585, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: db
       value: 
-      objectReference: {fileID: 734543598}
+      objectReference: {fileID: 1621076491730550993}
     - target: {fileID: 8136792994691347912, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.29684
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8136792994691347912, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -613,6 +594,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 771597530944b314fbe9439e2813e21a, type: 3}
+--- !u!114 &1621076491730550993 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2009688135229088629, guid: 771597530944b314fbe9439e2813e21a, type: 3}
+  m_PrefabInstance: {fileID: 1621076491730550992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8999332b3da9efd439d8d4f612302180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DatabaseManager
 --- !u!1001 &2338651980450216906
 PrefabInstance:
   m_ObjectHideFlags: 0

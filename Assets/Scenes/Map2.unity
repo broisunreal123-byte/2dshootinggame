@@ -316,6 +316,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2402523710372355262, guid: 819b84231c1d4f643a833b5feb0d99fb, type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2402523710372355262, guid: 819b84231c1d4f643a833b5feb0d99fb, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065946250219090193, guid: 819b84231c1d4f643a833b5feb0d99fb, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4317471687713216991, guid: 819b84231c1d4f643a833b5feb0d99fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1015,17 +1027,6 @@ Transform:
   - {fileID: 340310887}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1855226157 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2009688135229088629, guid: 771597530944b314fbe9439e2813e21a, type: 3}
-  m_PrefabInstance: {fileID: 1947606718}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8999332b3da9efd439d8d4f612302180, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DatabaseManager
 --- !u!4 &1944749558 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9195837874791264490, guid: d01eb965f0253ea42900f5a64a4fc16e, type: 3}
@@ -1088,6 +1089,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 771597530944b314fbe9439e2813e21a, type: 3}
+--- !u!114 &1947606719 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2009688135229088629, guid: 771597530944b314fbe9439e2813e21a, type: 3}
+  m_PrefabInstance: {fileID: 1947606718}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8999332b3da9efd439d8d4f612302180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DatabaseManager
 --- !u!1001 &1960420945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1262,7 +1274,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50e569f867d3dd04a916ac0e83d1838b, type: 3}
---- !u!1001 &6867798810524397508
+--- !u!1001 &6488876342689168043
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1270,14 +1282,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 60190144149295610, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -56.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 60190144149295610, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 55.5
-      objectReference: {fileID: 0}
     - target: {fileID: 4439083690241566791, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: m_Name
       value: CoinUI
@@ -1285,14 +1289,14 @@ PrefabInstance:
     - target: {fileID: 5791413297156548585, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: db
       value: 
-      objectReference: {fileID: 1855226157}
+      objectReference: {fileID: 1947606719}
     - target: {fileID: 8136792994691347912, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 236.57263
       objectReference: {fileID: 0}
     - target: {fileID: 8136792994691347912, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.41572
+      value: 165.84186
       objectReference: {fileID: 0}
     - target: {fileID: 8136792994691347912, guid: d901c52e824262e4c92e5ddd5bf90f8c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1342,6 +1346,6 @@ SceneRoots:
   - {fileID: 1404748226}
   - {fileID: 1361034225}
   - {fileID: 694415085}
-  - {fileID: 6867798810524397508}
   - {fileID: 1947606718}
   - {fileID: 609218789}
+  - {fileID: 6488876342689168043}
