@@ -3,14 +3,19 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    [SerializeField] protected float hp;
-    [SerializeField] protected float dmg;
+    [SerializeField] protected int hp;
+    [SerializeField] protected int dmg;
     [SerializeField] protected float spawnCooldown;
     protected float lastAttack = -999f;
-    public virtual void TakeDamage(float dmg)
+    void Start()
+    {
+        HealthManager.Instance.UpdateHealthUI(hp);
+    }
+    public virtual void TakeDamage(int dmg)
     {
         hp -= dmg;
         Debug.Log("It deals " + dmg + " dmg");
+        HealthManager.Instance.UpdateHealthUI(hp);
         if (hp <= 0)
         {
             Die();

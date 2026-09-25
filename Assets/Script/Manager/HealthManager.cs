@@ -13,11 +13,11 @@ public class HealthManager : MonoBehaviour
         } else
         {
             Destroy(gameObject);
+            return;
         }
-        healthUpdate();
     }
-    private void healthUpdate()
+    public void UpdateHealthUI(int currenthp)
     {
-      healthAmount.text = healthAmount.ToString();  
+      healthAmount.text = currenthp.ToString();  
     }
 }

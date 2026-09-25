@@ -4,7 +4,7 @@ using UnityEngine;
 public class FireBall : MonoBehaviour
 {
     [SerializeField] private float speed = 3f;
-    [SerializeField] private float dmg = 50;
+    [SerializeField] private int dmg = 50;
     private Rigidbody2D rb;
     void Awake()
     {
