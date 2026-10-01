@@ -17,7 +17,7 @@ public class Player : Character
     void Start()
     {
         hp = 100;
-        ApplyPoison(20,5);
+        ApplyFrozen(3f);
     }
     protected override void Update()
     {
@@ -25,10 +25,17 @@ public class Player : Character
         isGrounded = Physics2D.OverlapCircle(FeetPos.position, GroundDistance, GroundLayer);
 
         float moveX = Input.GetAxisRaw("Horizontal");
-        rb.linearVelocity = new Vector2(moveX * speedForce, rb.linearVelocity.y);
-        if (isGrounded && Input.GetButtonDown("Jump"))
+        
+        if (isGrounded && Input.GetButtonDown("Jump") && !isFrozen)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
+        }
+        if (isFrozen)
+        {
+            rb.linearVelocity = new Vector2(0,rb.linearVelocity.y);
+        } else
+        {
+             rb.linearVelocity = new Vector2(moveX * speedForce, rb.linearVelocity.y);
         }
     }
 

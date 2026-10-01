@@ -10,8 +10,11 @@ public class Character : MonoBehaviour
     private bool isPoisoned;
     private float poisonDuration;
     private float tickInterval = 1f;
-    private float lastPoisonTick;
+    private float lastPoisonTick = -999;
     private int poisonDamagePerTick;
+    protected bool isFrozen;
+    private float frozenDuration;
+
 
     void Start()
     {
@@ -30,21 +33,42 @@ public class Character : MonoBehaviour
             if (Time.time >= poisonDuration)
             {
                 isPoisoned = false;
-             
+
             }
         }
+
+        if (isFrozen)
+        {
+           
+            Debug.Log("the player is now frozen!");
+            if (Time.time >= frozenDuration)
+            {
+                isFrozen = false;
+                Debug.Log("Player is no longer frozen!");
+            }
+        }
+        else
+        {
+        }
+            
+
+
+    }
+    public void ApplyFrozen(float duration)
+    {
+        isFrozen = true;
+        frozenDuration = duration + Time.time;
     }
     public void ApplyPoison(float duration, int dmgPerTick)
     {
         poisonDuration = duration + Time.time;
         poisonDamagePerTick = dmgPerTick;
         isPoisoned = true;
-        lastPoisonTick = Time.time;
     }
+
     public virtual void TakeDamage(int dmg)
     {
         hp -= dmg;
-        Debug.Log("It deals " + dmg + " dmg");
         HealthManager.Instance.UpdateHealthUI(hp);
         if (hp <= 0)
         {
