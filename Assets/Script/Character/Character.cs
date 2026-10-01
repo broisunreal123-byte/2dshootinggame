@@ -39,7 +39,6 @@ public class Character : MonoBehaviour
 
         if (isFrozen)
         {
-           
             Debug.Log("the player is now frozen!");
             if (Time.time >= frozenDuration)
             {
