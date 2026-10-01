@@ -15,8 +15,9 @@ public class FlyingEnemy : Enemy
         dmg = 20;
         InvokeRepeating(nameof(spawnFireball), spawnCooldown, spawnCooldown - 0.5f);
     }
-    void Update()
+    protected override void Update()
     {
+        base.Update();
         transform.Translate(Vector2.right * direction * speed * Time.deltaTime,Space.World);
         
     }

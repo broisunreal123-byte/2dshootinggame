@@ -17,9 +17,11 @@ public class Player : Character
     void Start()
     {
         hp = 100;
+        ApplyPoison(20,5);
     }
-    void Update()
+    protected override void Update()
     {
+        base.Update();
         isGrounded = Physics2D.OverlapCircle(FeetPos.position, GroundDistance, GroundLayer);
 
         float moveX = Input.GetAxisRaw("Horizontal");

@@ -11,8 +11,9 @@ public class Zombie : Enemy
     {
         dmg = 20;
     }
-    void Update()
+    protected override void Update()
     {
+        base.Update();
         if (player == null) return;
         float direction = Math.Sign(player.position.x - transform.position.x);
         rb.linearVelocity = new Vector2(direction * zombieSpeed, rb.linearVelocity.y);
