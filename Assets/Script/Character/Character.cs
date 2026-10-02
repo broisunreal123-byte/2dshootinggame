@@ -69,6 +69,7 @@ public class Character : MonoBehaviour
     {
         hp -= dmg;
         HealthManager.Instance.UpdateHealthUI(hp);
+        Debug.Log("You deal " + dmg + " dmg");
         if (hp <= 0)
         {
             Die();

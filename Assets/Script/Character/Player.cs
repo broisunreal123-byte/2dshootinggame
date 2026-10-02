@@ -17,7 +17,7 @@ public class Player : Character
     void Start()
     {
         hp = 100;
-        ApplyFrozen(3f);
+        
     }
     protected override void Update()
     {

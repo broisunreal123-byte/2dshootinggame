@@ -22,11 +22,13 @@ public class GameManagerMap2 : MonoBehaviour
         Time.timeScale = 1f;
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
+        HealthManager.Instance.UpdateHealthUI(100);
     }
     public void firstGameScene()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(StartScene);
+        HealthManager.Instance.UpdateHealthUI(100);
     }
     public void showLoseMenu()
     {
